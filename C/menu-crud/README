@@ -1,0 +1,21 @@
+# Menu de Notas (CRUD) em C
+
+Projeto desenvolvido em linguagem C como atividade acadêmica, com o objetivo de praticar a manipulação de vetores, menus interativos e operações CRUD (Create, Read, Update e Delete).
+
+## 📌 Funcionalidades
+
+- Inserção de notas em um vetor
+- Alteração de uma nota por índice
+- Exclusão de nota com reorganização do vetor
+- Listagem de todas as notas cadastradas
+- Consulta de nota por índice
+- Menu interativo com controle de fluxo
+
+## 🛠️ Conceitos Utilizados
+
+- Vetores
+- Estruturas de repetição (`while`)
+- Estruturas condicionais (`if / else`)
+- Controle de índices
+- Validação de entradas do usuário
+- Lógica de CRUD
