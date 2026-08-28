@@ -5,12 +5,14 @@ Este repositório contém projetos feitos durante minha graduação, focando em 
 ## Linguagens e Tecnologias
 - C
 - Python
+- Java
 - HTML / CSS / JavaScript
 
 ## Estrutura do Repositório
 - `C/` - projetos e trabalhos em C
 - `Python/`- projetos e trabalhos em Python
-- `HTML_CSS_JS/` - projetos de web development
+- `Java/`- projetos e trabalhos em Java
+- `HTML_CSS_JS/` - projetos de desenvolvimento web
 
 ## Como explorar os projetos
 Cada pasta de projeto contém:
