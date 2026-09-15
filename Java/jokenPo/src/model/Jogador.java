@@ -3,7 +3,7 @@ package model;
 public class Jogador {
     // O jogador tem que ter um nome e uma jogada
     // Atributos privados
-    private String nomeJogador;
+    private final String nomeJogador;
     private Jogada jogadaAtual;
     private int vitorias;
 
@@ -15,23 +15,22 @@ public class Jogador {
         this.vitorias = 0;
     }
 
-    // Retorna o valor de uma variável que está protegida com o private
+    // Método get para retornar o valor da variável que está protegida com o private
     public String getNome() {
         return nomeJogador;
     }
 
-    // Method get para retornar o valor da variável protegida com private
     public Jogada getJogada() {
         return jogadaAtual;
     }
 
-    // Metohd set para definir a nova jogada a cada partida
-    public void setJogada(Jogada jogadaAtual) {
-        this.jogadaAtual = jogadaAtual;
+    // Método set para definir a nova jogada a cada partida
+    public void setJogada(Jogada novaJogada) {
+        this.jogadaAtual = novaJogada;
     }
 
-    // Method get para retornar o valor da variável protegida com private
-    public int getVitorias() { //Sempre pega o status atual da propriedade sem alterar os valores
+    // Sempre pega o status atual da propriedade sem alterar os valores
+    public int getVitorias() {
         return vitorias;
     }
 
