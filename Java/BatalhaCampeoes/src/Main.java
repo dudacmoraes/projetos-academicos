@@ -12,12 +12,12 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Campeao scorpion = new Campeao(1, "Scorpion", 120, 75, 10);
-        Campeao subzero = new Campeao(2, "Subzero", 130, 70, 10);
-        Campeao liuKang = new Campeao(3, "Liu Kang", 90, 65, 5);
-        Campeao raiden = new Campeao(4, "Raiden", 100, 80, 15);
-        Campeao johnnyCage = new Campeao(5, "Johnny Cage", 80, 45, 15);
-        Campeao sonyaBlade = new Campeao(6, "Sonya Blade", 125, 50, 20);
+        Campeao scorpion = new Campeao(1, "Scorpion", 120, 70, 10);
+        Campeao subzero = new Campeao(2, "Subzero", 130, 65, 10);
+        Campeao liuKang = new Campeao(3, "Liu Kang", 90, 60, 5);
+        Campeao raiden = new Campeao(4, "Raiden", 100, 75, 15);
+        Campeao johnnyCage = new Campeao(5, "Johnny Cage", 80, 40, 15);
+        Campeao sonyaBlade = new Campeao(6, "Sonya Blade", 125, 45, 20);
 
         //Array list com os campeões
         ArrayList<Campeao> listaCampeoes = new ArrayList<>();
