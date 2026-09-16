@@ -32,7 +32,7 @@ public class Campeao {
         return vida;
     }
 
-    public void setVida(double ganhoVida) {
+    public void recuperarVida(double ganhoVida) {
         vida = (int) (vida + (vida * ganhoVida));
     }
 
