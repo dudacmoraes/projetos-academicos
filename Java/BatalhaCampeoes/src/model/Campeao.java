@@ -7,7 +7,6 @@ public class Campeao {
     private final int ataque;
     private final int defesa;
 
-    // CONSTRUTOR!!!!!!!!!! (Tem que ter TODOS os atributos da classe)
     public Campeao(int identificadorCampeao, String nomeCampeao, int vida, int ataque, int defesa) {
         this.identificadorCampeao = identificadorCampeao;
         this.nomeCampeao = nomeCampeao;
