@@ -46,6 +46,9 @@ public class Campeao {
 
     public void defender(int ataqueInimigo) {
         int dano = ataqueInimigo - defesa;
+        if (dano < 1) {
+            dano = 1;
+        }
         vida -= dano;
     }
 }
