@@ -46,10 +46,10 @@ public class BatalhaService {
     public void eventoEspecial(Campeao jogador) {
         boolean eventoEspecial = random.nextBoolean();
         if (eventoEspecial) {
-            jogador.setVida(0.05);
+            jogador.setVida(0.10);
             System.out.println(" ");
             System.out.println("EVENTO ESPECIAL!");
-            System.out.printf("%s recuperou 5%% de sua vida!\n", jogador.getNomeCampeao());
+            System.out.printf("%s recuperou 10%% de sua vida!\n", jogador.getNomeCampeao());
         }
     }
 
