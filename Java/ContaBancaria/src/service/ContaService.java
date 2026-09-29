@@ -14,14 +14,10 @@ public class ContaService {
     }
 
     public ContaBanco buscarConta(int numeroConta) {
-        ContaBanco conta = null;
-        for (ContaBanco cadaConta : listaContas) {
-            if (cadaConta.getNumeroConta() == numeroConta) {
-                conta = cadaConta;
+        for (ContaBanco conta : listaContas) {
+            if (conta.getNumeroConta() == numeroConta) {
+                return conta;
             }
-        }
-        if (conta == null || !conta.isStatusConta()) {
-            System.out.println("Conta inexistente ou encerrada.");
         }
         return null;
     }
