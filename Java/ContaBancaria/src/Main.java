@@ -1,9 +1,7 @@
 import model.ContaBanco;
 import model.TipoConta;
 import service.ContaService;
-
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class Main {
     static Scanner scanner = new Scanner(System.in);
@@ -34,12 +32,11 @@ public class Main {
             }
 
             if (escolha == 1) {
-                ContaBanco conta = service.
+                int numeroConta;
                 System.out.println("Entrar na conta");
 
                 while (true) {
-                    int numeroConta = 0;
-
+                    ContaBanco conta = null;
                     System.out.print("Número da conta: ");
                     entrada = scanner.nextLine();
 
@@ -49,14 +46,19 @@ public class Main {
                     }
                     try {
                         numeroConta = Integer.parseInt(entrada);
+                        conta = service.buscarConta(numeroConta);
                     } catch (NumberFormatException e) {
                         System.out.println("Entrada inválida.");
                     }
-                    service.buscarConta(numeroConta);
+
+                    if (conta == null || !conta.isStatusConta()) {
+                        System.out.println("Conta inexistente ou encerrada.");
+                        break;
+                    }
 
                     while (true) {
                         System.out.println("-".repeat(20));
-                        System.out.println();
+                        System.out.println(conta);
                         System.out.println("-".repeat(20));
 
                         System.out.println("[1] Sacar\n[2] Depositar\n[3] Pagar mensalidade\n[4] Encerrar conta\n[5] Sair da conta");
